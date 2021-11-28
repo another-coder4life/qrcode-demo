@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+</head>
+<body>
+    <div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHQAAAB0CAYAAABUmhYnAAAAAklEQVR4AewaftIAAAKqSURBVO3BQW7sWAwEwSxC979yTi+5eoAgtcfmZ0T8YI1RrFGKNUqxRinWKMUapVijFGuUYo1SrFGKNUqxRinWKMUapVijFGuUi4eS8JNUuiTcoXJHEn6SyhPFGqVYoxRrlIuXqbwpCScqXRJOknCicqLypiS8qVijFGuUYo1y8WVJuEPlCZWTJLwpCXeofFOxRinWKMUa5eKPS8IdKpMVa5RijVKsUS6GUbkjCZ3KX1asUYo1SrFGufgylf9TEjqVN6n8JsUapVijFGuUi5clYbIk/GbFGqVYoxRrlPjBH5aEE5V/SbFGKdYoxRrl4qEkdCp3JKFT6ZLwRBI6lS4J36RykoRO5YlijVKsUYo1Svzgi5JwotIloVM5SUKn0iWhU3lTEp5QeVOxRinWKMUa5eKhJHQqdyShU+mScKLSJaFT6ZLQqXRJOFE5UTlJwjcVa5RijVKsUeIHL0pCp/JNSehUTpJwh0qXhE7lNynWKMUapVijxA8eSMKbVLokdConSehUTpJwotIl4UTlJAmdypuKNUqxRinWKBcPqXyTykkS7kjCiUqXhE7lJAmdykkSOpUnijVKsUYp1igXDyXhJ6k8oXKHykkSnlB5U7FGKdYoxRrl4mUqb0rCicpJEjqVkyR0Kl0STlROVLokdCpPFGuUYo1SrFEuviwJd6jckYQTlZMk3KHyJpU3FWuUYo1SrFEu/jiVLgldEu5Q6ZLQqXRJOFHpknCi8kSxRinWKMUa5WI4lTuS0Kl0SXhC5ZuKNUqxRinWKBdfpvKbJKFT6VROVH6zYo1SrFGKNcrFy5Lwk5JwkoROpUvCiUqXhBOVO5LQqTxRrFGKNUqxRokfrDGKNUqxRinWKMUapVijFGuUYo1SrFGKNUqxRinWKMUapVijFGuUYo3yH6keC+Rb0O8aAAAAAElFTkSuQmCC" />
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="/node_modules/qrcode/build/qrcode.js"></script>
+    <script>
+        QRCode.toCanvas(document.getElementById('canvas'), 'Hello Browser QR!');
+    </script>
+</body>
+</html>
